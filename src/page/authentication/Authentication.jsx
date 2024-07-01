@@ -1,16 +1,11 @@
 import { capitalize, Grid } from "@mui/material";
 import React from "react";
-import CommonButton from "../../components/common/commonButton/CommonButton";
+import Notification from "../../components/common/notification/Notification";
 
 function Authentication() {
   return (
     <Grid item sm={8}>
-      <CommonButton variant="contained" size="large">
-        view profile
-      </CommonButton>
-      <CommonButton variant="outlined" size="large">
-        view profile
-      </CommonButton>
+      <Notification badgeColor="error" badgeContent="5" />
     </Grid>
   );
 }
