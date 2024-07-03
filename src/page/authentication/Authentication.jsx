@@ -1,11 +1,11 @@
-import { capitalize, Grid } from "@mui/material";
-import React from "react";
-import Notification from "../../components/common/notification/Notification";
+import { Grid } from "@mui/material";
+
+import Header from "../../components/common/header/Header";
 
 function Authentication() {
   return (
     <Grid item sm={8}>
-      <Notification badgeColor="error" badgeContent={5} />
+      <Header title="authentication" />
     </Grid>
   );
 }
