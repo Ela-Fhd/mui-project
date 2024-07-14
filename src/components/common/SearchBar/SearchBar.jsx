@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import InputAdornment from "@mui/material/InputAdornment";
 
-function SearchBar({ placeholder, label, onChange }) {
+function SearchBar({ placeholder, label = "", onChange }) {
   const styles = {
     wrapper: {
       width: "100%",

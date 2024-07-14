@@ -20,7 +20,6 @@ function Authentication() {
     return (
       <SearchBar
         placeholder="Search by emailAddress , userId , uuid..."
-        label="SearchBar"
         onChange={(e) => handleChange(e.target.value)}
       />
     );
