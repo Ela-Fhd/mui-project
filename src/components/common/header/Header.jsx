@@ -30,7 +30,7 @@ function Header({ title }) {
     },
     setting: {
       color: "#fff",
-      padding: "5px",
+      marginLeft: "5px",
     },
     settingIcon: {
       fontSize: "35px",
@@ -63,6 +63,7 @@ function Header({ title }) {
           variant="outlined"
           color="primary"
           sx={{ border: "1px solid #fff" }}
+          size="small"
         >
           web setup
         </CommonButton>

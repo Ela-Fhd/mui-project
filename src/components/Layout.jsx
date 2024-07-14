@@ -15,8 +15,8 @@ function Layout() {
 
   return (
     <Grid>
-      <Header title={title} />
       <Navbar />
+      <Header title={title} />
       <Outlet />
     </Grid>
   );
