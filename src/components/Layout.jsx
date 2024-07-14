@@ -1,10 +1,21 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
-import { Container, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
+import Header from "./common/header/Header";
+import { useEffect, useState } from "react";
 
 function Layout() {
+  const [title, setTitle] = useState(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    const pathname = location.pathname.replace(/\W/g, " ");
+    setTitle(pathname);
+  }, [location]);
+
   return (
-    <Grid container>
+    <Grid>
+      <Header title={title} />
       <Navbar />
       <Outlet />
     </Grid>

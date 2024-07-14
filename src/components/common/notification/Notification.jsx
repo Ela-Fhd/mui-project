@@ -5,7 +5,7 @@ import Tooltip from "@mui/material/Tooltip";
 import { useState } from "react";
 import BasicMenu from "../basicMenu/BasicMenu";
 
-function Notification({ badgeColor, iconColor, badgeContent }) {
+function Notification({ badgeColor, iconColor, sx }) {
   const [anchorel, setAnchorel] = useState(null);
   const [open, setOpen] = useState(false);
 
@@ -36,6 +36,7 @@ function Notification({ badgeColor, iconColor, badgeContent }) {
       >
         <IconButton
           color={iconColor}
+          sx={sx}
           onClick={notifications.length ? handleOpen : null}
           anchorel={anchorel}
         >

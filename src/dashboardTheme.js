@@ -23,5 +23,6 @@ export const dashboardTheme = createTheme({
   },
   palette: {
     primary: { main: "#bada55" },
+    white: { main: "#fff" },
   },
 });
